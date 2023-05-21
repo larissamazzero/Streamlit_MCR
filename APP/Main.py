@@ -1,10 +1,10 @@
+import streamlit as st
 from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error
 from pymcr.mcr import McrAR
 import plotly.express as px
-import streamlit as st
 import pandas as pd
 import numpy as np
-import streamlit as st
+
 
 st.set_page_config(
     page_title="MCR-ALS",
