@@ -4,6 +4,7 @@ from pymcr.mcr import McrAR
 import plotly.express as px
 import pandas as pd
 import numpy as np
+from PIL import Image
 
 
 st.set_page_config(
@@ -12,7 +13,9 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded"
 )
-st.image("wordart.png", width=400)
+image = Image.open('images\wordart.png')
+st.image(image, width=400)
+# st.image("images\wordart.png", width=400)
 
 # ARGUMENTOS DA FUNÇÃO MCR-ALS
 header = st.container()
